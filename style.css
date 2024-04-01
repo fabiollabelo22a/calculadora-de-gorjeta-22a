@@ -36,9 +36,12 @@ main {
 }
 
 .conta,
-.gorjeta {
+.gorjeta {}
+    .gorjeta label,
+    .pessoas label
     margin-bottom: 2rem;
-}
+
+
 
 .conta label,
 .gorjeta label {
@@ -68,11 +71,15 @@ main {
     outline: none;
 }
 
-.conta input::placeholder{
+.conta input::placeholder
+    .conta input::placeholder,
+    .pessoas input::placeholder{
     color: var(--green-300);
 }
 
 .conta:has(input:focus) div{
+ } .conta:has(input:focus) div,
+    .pessoas:has(input:focus) div {
     outline: 2px solid var(--light-green);
 }
 
